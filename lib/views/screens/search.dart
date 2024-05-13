@@ -64,46 +64,46 @@ class _SearchScreenState extends State<SearchScreen> {
                     margin: const EdgeInsets.symmetric(horizontal: 10),
                     height: MediaQuery.of(context).size.height,
                     child: GridView.builder(
-                        physics: const BouncingScrollPhysics(),
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                                mainAxisExtent: 400,
-                                crossAxisCount: 2,
-                                crossAxisSpacing: 8,
-                                mainAxisSpacing: 8),
-                        itemCount: searchResults.length,
-                        itemBuilder: ((context, index) => GridTile(
-                              child: InkWell(
-                                onTap: () {
-                                  Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => FullScreen(
-                                              imgUrl: searchResults[index]
-                                                  .imgSrc)));
-                                },
-                                child: Hero(
-                                  tag: searchResults[index].imgSrc,
-                                  child: Container(
-                                    height: 800,
-                                    width: 50,
-                                    decoration: BoxDecoration(
-                                        color: const Color.fromARGB(
-                                            99, 64, 169, 255),
-                                        borderRadius:
-                                            BorderRadius.circular(20)),
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(20),
-                                      child: Image.network(
-                                          height: 800,
-                                          width: 50,
-                                          fit: BoxFit.cover,
-                                          searchResults[index].imgSrc),
-                                    ),
+                      physics: const BouncingScrollPhysics(),
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                              mainAxisExtent: 400,
+                              crossAxisCount: 2,
+                              crossAxisSpacing: 8,
+                              mainAxisSpacing: 8),
+                      itemCount: searchResults.length,
+                      itemBuilder: ((context, index) => GridTile(
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => FullImage(
+                                        imgUrl: searchResults[index].imgSrc),
+                                  ),
+                                );
+                              },
+                              child: Hero(
+                                tag: searchResults[index].imgSrc,
+                                child: Container(
+                                  height: 800,
+                                  width: 50,
+                                  decoration: BoxDecoration(
+                                      color: const Color(0x6240A9FF),
+                                      borderRadius: BorderRadius.circular(20)),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(20),
+                                    child: Image.network(
+                                        height: 800,
+                                        width: 50,
+                                        fit: BoxFit.cover,
+                                        searchResults[index].imgSrc),
                                   ),
                                 ),
                               ),
-                            ))),
+                            ),
+                          )),
+                    ),
                   )
                 ],
               ),

@@ -109,7 +109,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => FullScreen(
+                                          builder: (context) => FullImage(
                                               imgUrl: categoryResults[index]
                                                   .imgSrc)));
                                 },

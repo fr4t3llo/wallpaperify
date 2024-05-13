@@ -104,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) => FullScreen(
+                                            builder: (context) => FullImage(
                                                 imgUrl: trendingWallList[index]
                                                     .imgSrc)));
                                   },

@@ -1,17 +1,15 @@
 import 'dart:io';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:image_gallery_saver/image_gallery_saver.dart';
 
-class FullScreen extends StatelessWidget {
+class FullImage extends StatelessWidget {
   final String imgUrl;
 
-  FullScreen({Key? key, required this.imgUrl});
+  FullImage({super.key, required this.imgUrl});
 
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -56,8 +54,8 @@ class FullScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      floatingActionButton: Container(
-        width: 100,
+      floatingActionButton: SizedBox(
+        width: 120,
         height: 50,
         child: FloatingActionButton(
           onPressed: () async {
