@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
 }
 
 class WelcomeScreen extends StatelessWidget {
-  const WelcomeScreen({super.key});
+  const WelcomeScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,54 +30,54 @@ class WelcomeScreen extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(
-                'assets/images/back2.png'), // Replace with your image asset
+            image: AssetImage('assets/images/back2.png'),
             fit: BoxFit.fill,
           ),
         ),
         child: Stack(
           children: [
-            const Spacer(), // Add this Spacer
+            const Spacer(),
             Align(
-              alignment: const Alignment(0, 0.5), // Center horizontally
+              alignment: const Alignment(0, 0.5),
               child: Column(
-                mainAxisSize: MainAxisSize.min, // Set mainAxisSize to min
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   const Text(
                     'Explore the Magic',
                     style: TextStyle(
-                        fontSize: 35,
-                        fontWeight: FontWeight.bold,
-                        color: Color.fromARGB(255, 255, 255, 255),
-                        fontFamily: 'my'),
+                      fontSize: 35,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(255, 255, 255, 255),
+                      fontFamily: 'my',
+                    ),
                   ),
-                  const SizedBox(
-                      height:
-                          20), // Add some space between the text and the button
+                  const SizedBox(height: 20),
                   ElevatedButton.icon(
                     onPressed: () {
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const HomeScreen()),
+                          builder: (context) => const HomeScreen(),
+                        ),
                       );
                     },
                     label: const Text(
                       'Get Started',
                       style: TextStyle(
-                          fontFamily: 'my',
-                          fontWeight: FontWeight.bold,
-                          fontSize: 19),
+                        fontFamily: 'my',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 19,
+                      ),
                     ),
                     icon: const Icon(Iconsax.arrow_right5, size: 24),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Color.fromARGB(
-                          255, 31, 236, 232), // Button background color
-                      foregroundColor:
-                          Color.fromARGB(255, 6, 6, 6), // Button text color
+                      backgroundColor: Color.fromARGB(255, 31, 236, 232),
+                      foregroundColor: Color.fromARGB(255, 6, 6, 6),
                       elevation: 5,
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 40, vertical: 15),
+                        horizontal: 40,
+                        vertical: 15,
+                      ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
                       ),

@@ -19,7 +19,7 @@ class CustomAppBar extends StatelessWidget {
           TextSpan(
             text: 'ify',
             style: TextStyle(
-              color: Color(0xFFFF007B),
+              color: Color.fromRGBO(255, 0, 123, 1),
               fontSize: 20,
               fontWeight: FontWeight.w600,
               fontFamily: 'my',
