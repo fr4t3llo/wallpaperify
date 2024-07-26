@@ -61,7 +61,7 @@ class FullImage extends StatelessWidget {
           onPressed: () async {
             await setWallpaperFromFile(imgUrl, context);
           },
-          backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+          backgroundColor: Color.fromARGB(255, 122, 122, 122),
           child: const Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [

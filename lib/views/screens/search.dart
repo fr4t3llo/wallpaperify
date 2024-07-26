@@ -89,7 +89,7 @@ class _SearchScreenState extends State<SearchScreen> {
                                   height: 800,
                                   width: 50,
                                   decoration: BoxDecoration(
-                                      color: const Color(0x6240A9FF),
+                                      color: Color.fromARGB(109, 0, 65, 218),
                                       borderRadius: BorderRadius.circular(20)),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(20),

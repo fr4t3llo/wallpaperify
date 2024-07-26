@@ -119,8 +119,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
                                     height: 800,
                                     width: 50,
                                     decoration: BoxDecoration(
-                                        color: const Color.fromARGB(
-                                            111, 64, 185, 255),
+                                        color: Color.fromARGB(109, 0, 65, 218),
                                         borderRadius:
                                             BorderRadius.circular(20)),
                                     child: ClipRRect(
