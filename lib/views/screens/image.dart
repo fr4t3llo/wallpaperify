@@ -1,4 +1,5 @@
 import 'dart:io';
+// import 'dart:nativewrappers/_internal/vm/lib/math_patch.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:path_provider/path_provider.dart';
@@ -61,7 +62,7 @@ class FullImage extends StatelessWidget {
           onPressed: () async {
             await setWallpaperFromFile(imgUrl, context);
           },
-          backgroundColor: Color.fromARGB(255, 122, 122, 122),
+          backgroundColor: Color.fromARGB(255, 255, 255, 255),
           child: const Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -74,8 +75,9 @@ class FullImage extends StatelessWidget {
                     fontFamily: 'my'),
               ),
               Icon(
-                Iconsax.document_download5,
-                color: Color(0xFFFF007B), // Change the color of the icon here
+                Icons.download,
+                color: Color.fromARGB(
+                    255, 18, 173, 4), // Change the color of the icon here
               ),
             ],
           ),
