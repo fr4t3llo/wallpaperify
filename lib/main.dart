@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:wallpaperify/views/screens/home.dart';
 import 'package:wallpaperify/views/screens/privacy.dart';
-import 'package:webview_flutter/webview_flutter.dart';
 
 void main() {
   runApp(const MyApp());

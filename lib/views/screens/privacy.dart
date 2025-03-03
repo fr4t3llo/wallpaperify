@@ -20,3 +20,7 @@ class _PrivacyPolicyScreenState extends State<PrivacyPolicyScreen> {
     );
   }
 }
+
+
+
+
