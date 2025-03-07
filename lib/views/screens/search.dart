@@ -20,13 +20,10 @@ class _SearchScreenState extends State<SearchScreen> {
   bool isLoading = true;
   getSearchResults() async {
     searchResults = await Api.searchWallpapers(widget.query);
-
     setState(() {
       isLoading = false;
     });
   }
-
-  
 
   @override
   void initState() {
