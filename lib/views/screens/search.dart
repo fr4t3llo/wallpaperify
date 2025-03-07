@@ -33,6 +33,8 @@ class _SearchScreenState extends State<SearchScreen> {
     getSearchResults();
   }
 
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
