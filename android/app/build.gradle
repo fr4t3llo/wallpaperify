@@ -28,6 +28,7 @@ if (keystorePropertiesFile.exists()) {
     keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 }
 
+§
 android {
     namespace "com.example.wallpaperify"
     compileSdkVersion 34 // Changed from flutter.compileSdkVersion to fixed version
@@ -39,7 +40,7 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = '17' // Updated to match Java version
+        jvmTarget = '17'  // Must match Java version (17)
     }
 
     sourceSets {
