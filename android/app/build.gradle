@@ -29,8 +29,6 @@ if (keystorePropertiesFile.exists()) {
 }
 
 
-
-
 android {
     namespace "com.example.wallpaperify"
     compileSdkVersion 34 // Changed from flutter.compileSdkVersion to fixed version
