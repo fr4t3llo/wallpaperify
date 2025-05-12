@@ -28,7 +28,7 @@ if (keystorePropertiesFile.exists()) {
     keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 }
 
-§
+
 android {
     namespace "com.example.wallpaperify"
     compileSdkVersion 34 // Changed from flutter.compileSdkVersion to fixed version
